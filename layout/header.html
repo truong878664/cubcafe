@@ -1,0 +1,98 @@
+<link rel="stylesheet" href="../style.css" />
+
+<div class="logo">
+  <img src="../../../asscet/images/logongang.png" />
+</div>
+<div class="header">
+  <ul class="navbar">
+    <li class="item active">
+      <a href="/">Trang chủ</a>
+    </li>
+    <li class="item">
+      <a href="/page/gioi-thieu/">Giới thiệu</a>
+    </li>
+    <li class="item tippy">
+      <h3 class="tippy-heading">
+        <a href="/page/thuc-don/">Thực đơn</a>
+      </h3>
+      <ul class="tippy-list">
+        <li class="tippy-item">
+          <a href="/">Cà phê</a>
+        </li>
+        <li class="tippy-item">
+          <a href="/">Trà</a>
+        </li>
+        <li class="tippy-item">
+          <a href="/">Đá xay / sinh tố</a>
+        </li>
+        <li class="tippy-item">
+          <a href="/">Trái Cây/Home Made</a>
+        </li>
+        <li class="tippy-item">
+          <a href="/">Kombucha</a>
+        </li>
+        <li class="tippy-item">
+          <a href="/">Thức ăn/Cơm niêu</a>
+        </li>
+        <li class="tippy-item">
+          <a href="/">Vật phẩm</a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="item logo-center">
+      <a href="/"></a>
+    </li>
+    <li class="item tippy">
+      <h3 class="tippy-heading">Thuê hội nghị</h3>
+      <ul class="tippy-list">
+        <li class="tippy-item"><a href="/">Đăng ký phòng họp</a></li>
+        <li class="tippy-item"><a href="/">Hình ảnh hội nghị</a></li>
+      </ul>
+    </li>
+    <li class="item tippy">
+      <h3 class="tippy-heading"><a href="/">Nhượng quyền</a></h3>
+      <ul class="tippy-list">
+        <li class="tippy-item"><a href="/">Nhượng quyền</a></li>
+        <li class="tippy-item"><a href="/">Cửa hàng</a></li>
+      </ul>
+    </li>
+    <li class="item"><a href="/">Liên hệ</a></li>
+    <li class="langue">
+      <div class="langue-item vi"></div>
+      <div class="langue-item en"></div>
+    </li>
+  </ul>
+</div>
+<script>
+  function start() {
+    activeHeader();
+  }
+
+  function activeHeader() {
+    const pathName = window.location.pathname;
+    const active = document.querySelector(".active");
+    active.classList.remove("active");
+    const activeElement = getParentLi();
+    activeElement.classList.add("active");
+  }
+
+  function getParentLi() {
+    const pathName = window.location.pathname;
+    const elementClick = document.querySelector(`[href='${pathName}']`);
+    let activeElement = elementClick;
+
+    for (let i = 0; i < 10; i++) {
+      if (activeElement.parentElement.localName === "li") {
+        activeElement = activeElement.parentElement;
+        break;
+      } else {
+        activeElement = activeElement.parentElement;
+      }
+    }
+
+    return activeElement;
+  }
+
+  start();
+</script>

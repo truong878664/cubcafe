@@ -1,0 +1,35 @@
+.content-gt{
+    height: 500px;
+}
+
+
+.gt-heading {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    text-align: center;
+    margin-top: 100px;
+}   
+.gt-container-content{
+    max-width: 1000px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gt-content {
+    display: flex;
+    margin: 20px 0;
+
+}
+.gt-para {
+    flex: 1;
+    display: block;
+    margin-top: 100px;
+    width: 50%;
+    padding-right: 40px;
+}
+.gt-img {
+    flex: 1;
+    width: 50%;
+}
