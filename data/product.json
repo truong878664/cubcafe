@@ -1,6 +1,8 @@
 [
   {
     "title": "CÀ PHÊ",
+    "img":"../../asscet/image/",
+    
     "data": [
       { "name": "Cà Phê Sữa", "price": "29000" },
       { "name": "Cà Phê Đen", "price": "29000" },
@@ -12,6 +14,7 @@
   },
   {
     "title": "TRÀ",
+    "img":"../../asscet/image/",
     "data": [
       { "name": "Trà Gừng Cam Quế", "price": "49000" },
       { "name": "Trà Sữa Oolong Rang", "price": "49000" },
@@ -26,6 +29,7 @@
   },
   {
     "title": "ĐÁ XAY / SINH TỐ",
+    "img":"../../asscet/image/",
     "data": [
       { "name": "Sữa Chua Nha Đam Sả", "price": "49000" },
       { "name": "Tắc Đào", "price": "49000" },
@@ -37,6 +41,7 @@
   },
   {
     "title": "TRÁI CÂY/ HOME MADE/ KOMBUCHA",
+    "img":"../../asscet/image/",
     "data": [
       { "name": "Yogurt Nha Đam Ngũ Cốc", "price": "55000" },
       { "name": "Yellow Summer", "price": "55000" },
@@ -50,6 +55,7 @@
   },
   {
     "title": "THỨC ĂN/ CƠM NIÊU",
+    "img":"../../asscet/image/",
     "data": [
       { "name": "Hủ Tiếu Nam Vang", "price": "65000" },
       { "name": "Mì Ý Bò Bằm", "price": "59000" },
@@ -60,6 +66,7 @@
   },
   {
     "title": "Cơm Niêu",
+    "img":"../../asscet/image/",
     "data": [
       {
         "name": "Cơm niêu, món mặn, món xào, canh, salad tự chọn (thực đơn thay đổi theo ngày)",
@@ -73,6 +80,7 @@
   },
   {
     "title": "VẬT PHẨM",
+    "img":"../../asscet/image/",
     "data": [
       { "name": "Phin Nhôm", "price": "89000" },
       { "name": "Bình Giữ Nhiệt", "price": "219000" },
