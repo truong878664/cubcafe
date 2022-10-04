@@ -57,11 +57,18 @@ a {
 
 }
 
+.wrapper-header {
+    position: fixed;
+}
+
 .header {
     width: 100vw;
     height: 60px;
     background-color: black;
+    z-index: 10000000;
 }
+
+
 
 #header {
     position: sticky;
@@ -118,7 +125,6 @@ a {
 
 .logo-center:hover {
     background-color: #05344c;
-    ;
 }
 
 .langue {
@@ -173,7 +179,7 @@ a {
 
 .tippy-item {
     padding: 0 12px;
-    height: 46px;
+    /* height: 46px; */
     line-height: 46px;
     border-top-right-radius: 12px;
     border-bottom-left-radius: 12px;
@@ -510,4 +516,26 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     cursor: pointer;
+}
+
+.goog-te-banner-frame {
+    display: none;
+}
+
+.goog-logo-link {
+    display: none;
+}
+
+.goog-te-gadget {
+    color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    /* display: none */
+}
+
+#google_translate_element select {
+    border: 1px solid #ccc;
+    padding: 4px;
+    outline: none;
+    color: var(--primary-color);
+
 }

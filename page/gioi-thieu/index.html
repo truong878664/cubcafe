@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Cup Cafe | Giới thiệu</title>
+    <link rel="icon" href="../../asscet/ico/favicon.png" />
     <link rel="stylesheet" href="../../style.css" />
     <link rel="stylesheet" href="./style.css" />
     <link
@@ -18,6 +19,7 @@
   </head>
   <body>
     <header id="header"></header>
+    <div id="google_translate_element"></div>
 
     <p class="gt-heading">Giới thiệu</p>
     <div class="gt-wrapper">
@@ -42,7 +44,19 @@
     </div>
 
     <footer id="footer"></footer>
+    <script
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
 
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: "vi" },
+          "google_translate_element"
+        );
+      }
+    </script>
     <script src="../../render.js"></script>
   </body>
 </html>

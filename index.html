@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="./asscet/ico/favicon.png" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
@@ -20,6 +21,8 @@
   <body>
     <!-- header -->
     <header id="header"></header>
+    <div id="google_translate_element"></div>
+    <button id="newlang">tieng phap</button>
 
     <!-- content -->
     <div class="content">
@@ -75,7 +78,9 @@
             <img src="./asscet/images/cofe.jpg" alt="" />
           </div>
         </div>
-        <button class="product-all">Xem tất cả sản phẩm</button>
+        <button class="product-all">
+          <a href="/page/thuc-don/">Xem tất cả sản phẩm</a>
+        </button>
       </div>
       <div class="sub-room" id="sub-room">
         <form class="sub-form">
@@ -126,9 +131,42 @@
         </div>
       </div>
     </div>
+    <p></p>
+    <button><a href="Javascript:updateCombobox('fr')">tieng phap</a></button>
     <footer id="footer"></footer>
     <div class="scroll-top"></div>
-    <script src="render.js"></script>
+
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: "vi",
+            autoDisplay: true,
+            includedLanguages: "zh-CN,nl,en,fr,de,ja,ko,es,th,cy,vi",
+          },
+          "google_translate_element"
+        );
+      }
+    </script>
+
+    <script
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
+
+    <script>
+      const langBtn = document.querySelector("#newlang");
+      function updateCombobox(newValue) {
+        var lang_dropdown =
+          document.getElementById(":0.targetLanguage").firstChild;
+      }
+
+      langBtn.addEventListener("click", () => {
+        updateCombobox("fr");
+      });
+    </script>
+
     <script src="main.js"></script>
+    <script src="render.js"></script>
   </body>
 </html>
