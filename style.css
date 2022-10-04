@@ -5,13 +5,16 @@
 
 }
 
-:root{
-    --primary-color: #00283e ;
+:root {
+    --primary-color: #00283e;
 }
 
 html {
     font-family: 'Montserrat', sans-serif;
+    scroll-padding-top: 100px;
+    scroll-behavior: smooth;
 }
+
 body {
     background-image: url(./asscet/images/bkgt.jpg);
     overflow-y: overlay;
@@ -19,19 +22,25 @@ body {
     scroll-behavior: smooth;
 }
 
+
+::selection {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
-  }
-  
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+}
+
+
+/* Handle */
+::-webkit-scrollbar-thumb {
     background: rgb(177, 175, 175);
     border-radius: 10px;
-  }
+}
 
-a{
+a {
     text-decoration: none;
     color: #fff;
     height: 100%;
@@ -47,6 +56,7 @@ a{
     padding: 26px 0;
 
 }
+
 .header {
     width: 100vw;
     height: 60px;
@@ -86,7 +96,8 @@ a{
 .item.active {
     background-color: var(--primary-color);
 }
-.logo-center{
+
+.logo-center {
     width: 110px;
     height: 110px;
     background-color: var(--primary-color);
@@ -104,9 +115,12 @@ a{
 .item:hover {
     background-color: var(--primary-color);
 }
+
 .logo-center:hover {
-    background-color: #05344c;;
+    background-color: #05344c;
+    ;
 }
+
 .langue {
     display: flex;
     align-items: center;
@@ -131,6 +145,7 @@ a{
 .vi {
     background-image: url(./asscet/images/vi.png);
 }
+
 .en {
     background-image: url(./asscet/images/en.png);
 
@@ -138,7 +153,7 @@ a{
 
 /* menu */
 
-.tippy:hover > .tippy-list {
+.tippy:hover>.tippy-list {
     display: block;
 }
 
@@ -172,7 +187,7 @@ a{
 
 
 /* content */
-.content{
+.content {
     max-width: 1000px;
     width: 100%;
     margin-left: auto;
@@ -181,10 +196,12 @@ a{
     flex-direction: column;
 
 }
-.bgr{
+
+.bgr {
     width: 100%;
     /* height: 2000px; */
 }
+
 .intro {
     display: flex;
     margin-top: 100px;
@@ -207,6 +224,7 @@ a{
     color: #d78542;
     margin-right: 10px;
 }
+
 .location-time {
     font-size: 14px;
     font-weight: 500;
@@ -218,25 +236,28 @@ a{
 .intro-content {
     margin-left: 20px;
 }
-.intro-content-heading {    
+
+.intro-content-heading {
     font-size: 28px;
     font-weight: 700;
     padding-bottom: 24px;
     color: var(--primary-color);
 }
+
 .intro-content-title {
     font-size: 16px;
     font-weight: 500;
     padding-bottom: 14px;
     color: rgb(77, 77, 77);
 }
+
 .intro-content-text {
     font-size: 18px;
     line-height: 30px;
 
 }
 
-.video{
+.video {
     width: 1000px;
     height: 580px;
     overflow: hidden;
@@ -246,7 +267,7 @@ a{
     border-radius: 4px;
 }
 
-.demo-menu-heading{
+.demo-menu-heading {
     text-align: center;
     font-size: 28px;
     font-weight: 600;
@@ -254,24 +275,26 @@ a{
     margin: 16px 0;
 }
 
-.demo-menu-wrapper{
+.demo-menu-wrapper {
     display: flex;
 
 }
+
 .demo-menu {
     display: flex;
     flex-direction: column;
     margin-bottom: 60px;
 }
 
-.demo-menu-item{
+.demo-menu-item {
     border: 2px solid var(--primary-color);
     border-radius: 6px;
     width: 25%;
     margin: 0 16px;
     overflow: hidden;
 }
-.demo-menu-item-title{
+
+.demo-menu-item-title {
     text-align: center;
     font-size: 20px;
     font-weight: 500;
@@ -280,6 +303,7 @@ a{
     color: #fff;
     height: 40px;
 }
+
 .demo-menu-item img {
     object-fit: cover;
     width: 100%;
@@ -296,8 +320,9 @@ a{
     font-weight: 600;
     font-size: 16px;
     cursor: pointer;
-    box-shadow: 1px 4px 10px rgba(0, 40, 62,.5);
+    box-shadow: 1px 4px 10px rgba(0, 40, 62, .5);
 }
+
 .product-all:hover {
     background-color: #023652;
 }
@@ -307,7 +332,7 @@ a{
 }
 
 
-.sub-room{
+.sub-room {
     width: 100vw;
     min-height: 730px;
     background: url(./asscet/images/ph.png);
@@ -326,10 +351,10 @@ a{
     width: 300px;
     position: absolute;
     right: 0;
-    margin-top:60px ;
+    margin-top: 60px;
     margin-right: 60px;
     align-items: center;
-    background-color: rgba(204, 204, 204,0.7);
+    background-color: rgba(204, 204, 204, 0.7);
     padding: 16px;
 }
 
@@ -339,6 +364,7 @@ a{
     font-size: 20px;
     font-weight: 500;
 }
+
 .sub-item {
     align-self: stretch;
 }
@@ -350,7 +376,7 @@ a{
 
 
 
-.sub-input{
+.sub-input {
     height: 35px;
     padding-left: 10px;
     margin-bottom: 15px;
@@ -358,7 +384,7 @@ a{
     border: 1px solid #ccc;
 }
 
-.form-btn{
+.form-btn {
     padding: 8px 16px;
     background-color: #d78542;
     border: none;
@@ -370,30 +396,32 @@ a{
 
 }
 
-.form-btn:hover{
+.form-btn:hover {
     filter: brightness(98%);
 }
 
 
-.event-wrapper{
+.event-wrapper {
     display: flex;
     margin-bottom: 32px;
 }
-.event-item{
+
+.event-item {
     width: 33.333%;
     background-color: #fff;
     margin: 0 20px;
     border: 25px solid #fff;
-    box-shadow: 0 0 5px rgba(0, 40, 62,0.2);
+    box-shadow: 0 0 5px rgba(0, 40, 62, 0.2);
     cursor: pointer;
 }
-.event-item:hover{
-    box-shadow: 0 0 20px rgba(0, 40, 62,0.1);
+
+.event-item:hover {
+    box-shadow: 0 0 20px rgba(0, 40, 62, 0.1);
     transform: translateY(-2px);
 }
 
 
-.event-img{
+.event-img {
     width: 100%;
     height: 80%;
     object-fit: cover;
@@ -402,7 +430,7 @@ a{
 
 
 
-.event-title{
+.event-title {
     text-align: center;
     color: var(--primary-color);
     font-size: 20px;
@@ -418,7 +446,7 @@ footer {
     color: #fff;
 }
 
-.footer-wrapper{
+.footer-wrapper {
     max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
@@ -426,12 +454,12 @@ footer {
     display: flex;
 }
 
-.footer-heading{
+.footer-heading {
     font-size: 30px;
     text-transform: uppercase;
 }
 
-.footer-address{
+.footer-address {
     display: flex;
     margin: 10px 0;
     align-items: center;
@@ -444,11 +472,12 @@ footer {
 }
 
 
-.footer-icon{
+.footer-icon {
     width: 30px;
     font-size: 20px;
 }
-.coppy-right{
+
+.coppy-right {
     color: #d78542;
     font-size: 14px;
 }
@@ -466,7 +495,7 @@ footer {
     background-position: center;
 }
 
-.footer-logo:hover{
+.footer-logo:hover {
     background-color: #05344c;
     cursor: pointer;
 }
@@ -482,4 +511,3 @@ footer {
     background-repeat: no-repeat;
     cursor: pointer;
 }
-

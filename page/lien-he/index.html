@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Cup Cafe | Giới thiệu</title>
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="../../asscet/font/fontawesome-free-6.2.0-web/fontawesome-free-6.2.0-web/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header id="header"></header>
+
+    <p class="lh-heading">Liên hệ</p>
+    <div class="lh-wrapper">
+      <div class="info">
+        <p class="lh-brand">THE CUP CAFE</p>
+        <p>
+          Địa chỉ: Số 117, Đường D1, P. Phú Hòa, TP. Thủ Dầu Một, T. Bình Dương
+        </p>
+        <p>Điện thoại: 0989 741 744</p>
+        <p>Hotline: 0989 741 744</p>
+        <p>Email: trandao056@gmail.com</p>
+        <p>
+          Đầu tư & quản lý bởi <br />
+          CÔNG TY CỔ PHẦN QUỐC TRƯỜNG
+        </p>
+      </div>
+      <form class="lh-form">
+        <div class="input">
+          <label for="ho-ten">Họ tên<span class>*</span></label>
+          <input required class="input-item" id="ho-ten" type="text" />
+        </div>
+
+        <div class="input">
+          <label for="dien-thoai">Điện thoại<span>*</span></label>
+          <input required class="input-item" id="dien-thoai" type="text" />
+        </div>
+
+        <div class="input">
+          <label for="email">Email<span>*</span></label>
+          <input required class="input-item" id="email" type="text" />
+        </div>
+
+        <div class="input">
+          <label for="noi-dung">Nội dung<span>*</span></label>
+          <textarea
+            required
+            class="lh-content"
+            id="noi-dung"
+            cols="50"
+            rows="5"
+          ></textarea>
+          <!-- <input class="input-item" id="noi-dung" type="text" /> -->
+        </div>
+        <input type="submit" class="lh-submit" value="Gửi" />
+      </form>
+    </div>
+
+    <footer id="footer"></footer>
+
+    <script src="../../render.js"></script>
+  </body>
+</html>

@@ -17,25 +17,24 @@
       </h3>
       <ul class="tippy-list">
         <li class="tippy-item">
-          <a href="/">Cà phê</a>
+          <a href="/page/thuc-don/#ca-phe">Cà phê</a>
         </li>
         <li class="tippy-item">
-          <a href="/">Trà</a>
+          <a href="/page/thuc-don/#tra">Trà</a>
         </li>
         <li class="tippy-item">
-          <a href="/">Đá xay / sinh tố</a>
+          <a href="/page/thuc-don/#đa-xay--sinh-to">Đá xay / sinh tố</a>
         </li>
         <li class="tippy-item">
-          <a href="/">Trái Cây/Home Made</a>
+          <a href="/page/thuc-don/#trai-cay-home-made-kombucha"
+            >Trái Cây/Home Made</a
+          >
         </li>
         <li class="tippy-item">
-          <a href="/">Kombucha</a>
+          <a href="/page/thuc-don/#thuc-an-com-nieu">Thức ăn/Cơm niêu</a>
         </li>
         <li class="tippy-item">
-          <a href="/">Thức ăn/Cơm niêu</a>
-        </li>
-        <li class="tippy-item">
-          <a href="/">Vật phẩm</a>
+          <a href="/page/thuc-don/#vat-pham">Vật phẩm</a>
         </li>
       </ul>
     </li>
@@ -46,7 +45,7 @@
     <li class="item tippy">
       <h3 class="tippy-heading">Thuê hội nghị</h3>
       <ul class="tippy-list">
-        <li class="tippy-item"><a href="/">Đăng ký phòng họp</a></li>
+        <li class="tippy-item"><a href="/#sub-room">Đăng ký phòng họp</a></li>
         <li class="tippy-item"><a href="/">Hình ảnh hội nghị</a></li>
       </ul>
     </li>
@@ -57,7 +56,7 @@
         <li class="tippy-item"><a href="/">Cửa hàng</a></li>
       </ul>
     </li>
-    <li class="item"><a href="/">Liên hệ</a></li>
+    <li class="item"><a href="/page/lien-he/">Liên hệ</a></li>
     <li class="langue">
       <div class="langue-item vi"></div>
       <div class="langue-item en"></div>
@@ -79,6 +78,7 @@
 
   function getParentLi() {
     const pathName = window.location.pathname;
+
     const elementClick = document.querySelector(`[href='${pathName}']`);
     let activeElement = elementClick;
 
@@ -90,7 +90,6 @@
         activeElement = activeElement.parentElement;
       }
     }
-
     return activeElement;
   }
 

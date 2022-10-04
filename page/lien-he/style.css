@@ -1,0 +1,86 @@
+.lh-heading {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    text-align: center;
+    margin-top: 100px;
+}
+
+.lh-wrapper {
+    max-width: 1000px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lh-brand {
+    text-transform: uppercase;
+    font-size: 30px;
+
+}
+
+.info {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.info p {
+    margin-bottom: 8px;
+}
+
+.lh-form {
+    max-width: 50%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    display: flex;
+    margin-bottom: 16px;
+    align-items: center;
+}
+
+.input label {
+    display: block;
+    width: 100px;
+
+}
+
+label span {
+    color: red;
+}
+
+.input-item {
+    height: 30px;
+    flex: 1;
+    outline: none;
+    border: 1px solid #ccc;
+    padding: 8px;
+    color: var(--primary-color);
+}
+
+.lh-content {
+    max-height: 100px;
+    min-height: 100px;
+    flex: 1;
+    outline: none;
+    border: 1px solid #ccc;
+    padding: 8px;
+    color: var(--primary-color);
+
+}
+
+.lh-submit {
+    width: 100px;
+    height: 40px;
+    border: none;
+    background-color: var(--primary-color);
+    margin-bottom: 32px;
+    align-self: flex-end;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
