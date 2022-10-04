@@ -60,13 +60,16 @@
     <li class="langue">
       <div class="langue-item vi"></div>
       <div class="langue-item en"></div>
+      <div id="google_translate_element" class=""></div>
     </li>
+
   </ul>
 </div>
 
 <script>
   function start() {
     activeHeader();
+    getLang()
   }
 
   function activeHeader() {
@@ -94,7 +97,16 @@
     return activeElement;
   }
 
-  const langBtn = document.querySelector(".vi");
-  console.log(langBtn);
+  function getLang() {
+    const langIcon = document.querySelector('.vi')
+    console.log(langIcon)
+    
+    
+    
+    const langActive = document.getElementById('google_translate_element').firstChild
+    console.log(langActive)
+  }
+
+
   start();
 </script>

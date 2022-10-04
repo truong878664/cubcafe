@@ -21,9 +21,6 @@
   <body>
     <!-- header -->
     <header id="header"></header>
-    <div id="google_translate_element"></div>
-    <button id="newlang">tieng phap</button>
-
     <!-- content -->
     <div class="content">
       <div class="intro">
@@ -136,34 +133,25 @@
     <footer id="footer"></footer>
     <div class="scroll-top"></div>
 
-    <script type="text/javascript">
-      function googleTranslateElementInit() {
-        new google.translate.TranslateElement(
-          {
-            pageLanguage: "vi",
-            autoDisplay: true,
-            includedLanguages: "zh-CN,nl,en,fr,de,ja,ko,es,th,cy,vi",
-          },
-          "google_translate_element"
-        );
-      }
-    </script>
-
+    
     <script
       type="text/javascript"
       src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
     ></script>
 
-    <script>
-      const langBtn = document.querySelector("#newlang");
-      function updateCombobox(newValue) {
-        var lang_dropdown =
-          document.getElementById(":0.targetLanguage").firstChild;
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        window.onload = () => {
+          new google.translate.TranslateElement(
+            {
+              pageLanguage: "vi",
+              autoDisplay: false,
+              includedLanguages: "zh-CN,nl,en,fr,de,ja,ko,es,th,cy,vi",
+            },
+            "google_translate_element"
+            );
+          }
       }
-
-      langBtn.addEventListener("click", () => {
-        updateCombobox("fr");
-      });
     </script>
 
     <script src="main.js"></script>

@@ -79,7 +79,7 @@ a {
 
 .navbar {
     height: 100%;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -130,6 +130,7 @@ a {
 .langue {
     display: flex;
     align-items: center;
+    position: relative;
 
 }
 
@@ -141,6 +142,7 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     margin-left: 8px;
+    display: none;
 }
 
 .langue-item:hover {
@@ -153,6 +155,7 @@ a {
 }
 
 .en {
+    display: block;
     background-image: url(./asscet/images/en.png);
 
 }
@@ -537,5 +540,25 @@ footer {
     padding: 4px;
     outline: none;
     color: var(--primary-color);
+    border-radius: 8px;
+    width: 70px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-60%);
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 10px;
+}
 
+#google_translate_element select option {
+    /* background-color: #d78542; */
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.skiptranslate.goog-te-gadget  {
+    color: transparent;
+}
+
+.goog-te-combo {
+    color: #d78542;
 }
