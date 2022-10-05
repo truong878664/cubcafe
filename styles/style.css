@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  background-image: url(./asscet/images/bkgt.jpg);
+  background-image: url(../asscet/images/bkgt.jpg);
   overflow-y: overlay;
   overflow-x: overlay;
   scroll-behavior: smooth;
@@ -46,6 +46,15 @@ a {
 }
 
 /* header */
+.tab-menu {
+  color: #fff;
+  font-size: 26px;
+  padding: 0 8px;
+  line-height: 60px;
+  cursor: pointer;
+  display: none;
+}
+
 .logo {
   max-width: 1000px;
   margin-left: auto;
@@ -104,7 +113,7 @@ a {
   align-self: center;
   border: 4px solid #fff;
   margin: 0 30px;
-  background-image: url(http://thecupcafevietnam.com/images/logo2.png);
+  background-image: url(../asscet/images/logo2.png);
   background-size: 70%;
   background-repeat: no-repeat;
   background-position: center;
@@ -142,59 +151,59 @@ a {
 
 .vi {
   display: block;
-  background-image: url(./asscet/images/language/vi.png);
+  background-image: url(../asscet/images/language/vi.png);
 }
 
 .en {
-  background-image: url(./asscet/images/language/en.png);
+  background-image: url(../asscet/images/language/en.png);
 }
 
 .other {
-  background-image: url(./asscet/images/language/language.png);
+  background-image: url(../asscet/images/language/language.png);
 }
 
 .zh-CN {
-  background-image: url(./asscet/images/language/trungquoc.jpg);
+  background-image: url(../asscet/images/language/trungquoc.jpg);
 
 }
 
 .de {
-  background-image: url(./asscet/images/language/Co-nuoc-Duc.jpg);
+  background-image: url(../asscet/images/language/Co-nuoc-Duc.jpg);
 
 }
 
 .nl {
-  background-image: url(./asscet/images/language/halan.png);
+  background-image: url(../asscet/images/language/halan.png);
 
 }
 
 .ko {
-  background-image: url(./asscet/images/language/hanquoc.png);
+  background-image: url(../asscet/images/language/hanquoc.png);
 
 }
 
 .ja {
-  background-image: url(./asscet/images/language/nhatban.jpg);
+  background-image: url(../asscet/images/language/nhatban.jpg);
 
 }
 
 .fr {
-  background-image: url(./asscet/images/language/phap.png);
+  background-image: url(../asscet/images/language/phap.png);
 
 }
 
 .es {
-  background-image: url(./asscet/images/language/taybannha.png);
+  background-image: url(../asscet/images/language/taybannha.png);
 
 }
 
 .th {
-  background-image: url(./asscet/images/language/thailan.png);
+  background-image: url(../asscet/images/language/thailan.png);
 
 }
 
 .cy {
-  background-image: url(./asscet/images/language/xuwell.png);
+  background-image: url(../asscet/images/language/xuwell.png);
 
 }
 
@@ -376,7 +385,7 @@ a {
 .sub-room {
   width: 100vw;
   min-height: 730px;
-  background: url(./asscet/images/ph.png);
+  background: url(../asscet/images/ph.png);
   background-position: top center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -520,7 +529,7 @@ footer {
   border-radius: 50%;
   align-self: center;
   margin-left: 40px;
-  background-image: url(./asscet/images/logo2.png);
+  background-image: url(../asscet/images/logo2.png);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -536,7 +545,7 @@ footer {
   bottom: 20px;
   width: 40px;
   height: 40px;
-  background-image: url(./asscet/images/ico_backtop.png);
+  background-image: url(../asscet/images/ico_backtop.png);
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
