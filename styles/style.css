@@ -49,10 +49,34 @@ a {
 .tab-menu {
   color: #fff;
   font-size: 26px;
-  padding: 0 8px;
   line-height: 60px;
   cursor: pointer;
   display: none;
+  width: 50px;
+  text-align: center;
+  z-index: 100;
+}
+
+.tab-menu:hover {
+  background-color: rgba(204, 204, 204, 0.1);
+}
+.tab-menu:active {
+  transform: scale(97%);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 40, 62, 0.5);
+  z-index: -1;
+  display: none;
+}
+
+#openmenu:checked ~ .overlay {
+  display: block;
 }
 
 .logo {
@@ -164,53 +188,64 @@ a {
 
 .zh-CN {
   background-image: url(../asscet/images/language/trungquoc.jpg);
-
 }
 
 .de {
   background-image: url(../asscet/images/language/Co-nuoc-Duc.jpg);
-
 }
 
 .nl {
   background-image: url(../asscet/images/language/halan.png);
-
 }
 
 .ko {
   background-image: url(../asscet/images/language/hanquoc.png);
-
 }
 
 .ja {
   background-image: url(../asscet/images/language/nhatban.jpg);
-
 }
 
 .fr {
   background-image: url(../asscet/images/language/phap.png);
-
 }
 
 .es {
   background-image: url(../asscet/images/language/taybannha.png);
-
 }
 
 .th {
   background-image: url(../asscet/images/language/thailan.png);
-
 }
 
 .cy {
   background-image: url(../asscet/images/language/xuwell.png);
-
 }
 
+.alert {
+  position: absolute;
+  top: 100%;
+  background-color: #fff;
+  text-transform: none;
+  width: 200px;
+  color: #d2001a;
+  padding: 8px;
+  /* border-radius: ; */
+  animation: outIn 5s;
+}
 
+.alert.none {
+  display: none;
+}
+
+@keyframes outIn {
+  0% {opacity: 0;}
+  97% {opacity: 0;}
+  100% {opacity: 1;}
+}
 /* menu */
 
-.tippy:hover>.tippy-list {
+.tippy:hover > .tippy-list {
   display: block;
 }
 
@@ -483,8 +518,8 @@ a {
 footer {
   background-color: var(--primary-color);
   width: 100%;
-  height: 400px;
   color: #fff;
+  padding-bottom: 20px;
 }
 
 .footer-wrapper {

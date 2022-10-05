@@ -84,3 +84,16 @@ label span {
     font-weight: 600;
     color: #fff;
 }
+
+@media (max-width: 1000px) {
+    .lh-wrapper {
+        flex-direction: column;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .lh-form {
+        margin-top: 50px;
+        max-width: 100%;
+    }
+}

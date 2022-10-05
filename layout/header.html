@@ -6,6 +6,8 @@
     <i class="fa-solid fa-bars"></i>
   </label>
   <input type="checkbox" id="openmenu" hidden />
+  <label for="openmenu" class="overlay"></label>
+
   <ul class="navbar">
     <li class="item active">
       <a href="/">Trang chủ</a>
@@ -71,6 +73,12 @@
       <div class="langue-item es"></div>
       <div class="langue-item th"></div>
       <div class="langue-item cy"></div>
+      <div class="alert">
+        <i class="fa-solid fa-triangle-exclamation"></i> Hiện trình duyệt đang
+        gặp lỗi khi lấy dữ liệu từ google translate, nếu bạn muốn sử dụng chức
+        năng chuyển đổi ngôn ngư, vui lòng refest lại trình duyệt, này là do lỗi
+        của mạng, không phải lỗi của lập trình viên :(, xin cảm ơn!
+      </div>
       <div id="google_translate_element" class=""></div>
     </li>
   </ul>
@@ -78,9 +86,23 @@
 
 <script>
   function start() {
+    // const curentCookies = document.cookie
+    // console.log(curentCookies)
+    // if(!curentCookies) {
+    //   document.cookie = "googtrans=/vi/vi"
+    // }
+    checkCookies();
     activeHeader();
     getReloadLang();
     getLang();
+  }
+
+  function checkCookies() {
+    const curentCookies = getCookie('googtrans');
+    console.log(curentCookies);
+    if (!curentCookies) {
+      document.cookie = "googtrans=/vi/vi";'path=/';
+    }
   }
 
   function activeHeader() {
@@ -113,6 +135,7 @@
       let currentLang =
         document.getElementById(":0.targetLanguage")?.firstChild;
 
+      const alert = document.querySelector(".alert");
       if (currentLang) {
         currentLang = currentLang;
         currentLang.addEventListener("change", () => {
@@ -122,6 +145,11 @@
           ownLang.forEach((item) => (item.style.display = "none"));
           langue.style.display = "block";
         });
+        const x = document.getElementById("google_translate_element").children;
+        console.log(x.length);
+        if (x.length) {
+          alert.classList.add("none");
+        }
         clearInterval(interval);
       } else {
         console.log("chua load xong");
