@@ -142,19 +142,66 @@ a {
 
 .vi {
   display: block;
-  background-image: url(./asscet/images/vi.png);
+  background-image: url(./asscet/images/language/vi.png);
 }
 
 .en {
-  background-image: url(./asscet/images/en.png);
+  background-image: url(./asscet/images/language/en.png);
 }
+
 .other {
-  background-image: url(./asscet/images/language.png);
+  background-image: url(./asscet/images/language/language.png);
 }
+
+.zh-CN {
+  background-image: url(./asscet/images/language/trungquoc.jpg);
+
+}
+
+.de {
+  background-image: url(./asscet/images/language/Co-nuoc-Duc.jpg);
+
+}
+
+.nl {
+  background-image: url(./asscet/images/language/halan.png);
+
+}
+
+.ko {
+  background-image: url(./asscet/images/language/hanquoc.png);
+
+}
+
+.ja {
+  background-image: url(./asscet/images/language/nhatban.jpg);
+
+}
+
+.fr {
+  background-image: url(./asscet/images/language/phap.png);
+
+}
+
+.es {
+  background-image: url(./asscet/images/language/taybannha.png);
+
+}
+
+.th {
+  background-image: url(./asscet/images/language/thailan.png);
+
+}
+
+.cy {
+  background-image: url(./asscet/images/language/xuwell.png);
+
+}
+
 
 /* menu */
 
-.tippy:hover > .tippy-list {
+.tippy:hover>.tippy-list {
   display: block;
 }
 
@@ -535,4 +582,3 @@ footer {
 .goog-te-combo {
   color: #d78542;
 }
-

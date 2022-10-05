@@ -60,7 +60,15 @@
     <li class="langue">
       <div class="langue-item vi"></div>
       <div class="langue-item en"></div>
-      <div class="langue-item other"></div>
+      <div class="langue-item zh-CN"></div>
+      <div class="langue-item de"></div>
+      <div class="langue-item nl"></div>
+      <div class="langue-item ko"></div>
+      <div class="langue-item ja"></div>
+      <div class="langue-item fr"></div>
+      <div class="langue-item es"></div>
+      <div class="langue-item th"></div>
+      <div class="langue-item cy"></div>
       <div id="google_translate_element" class=""></div>
     </li>
   </ul>
@@ -69,6 +77,7 @@
 <script>
   function start() {
     activeHeader();
+    getReloadLang();
     getLang();
   }
 
@@ -99,28 +108,48 @@
 
   function getLang() {
     const interval = setInterval(() => {
-      let currentLang = document.getElementById(":0.targetLanguage")?.firstChild;
-      if(currentLang) {
-        currentLang = currentLang
-        currentLang.addEventListener('change', () => {
-          let currentl = currentLang.value
+      let currentLang =
+        document.getElementById(":0.targetLanguage")?.firstChild;
 
-          if (currentl !== 'vi' && currentl !== 'en') {
-            currentl = 'other'
-          }
-             
-          const langue = document.querySelector(`.${currentl}`)
-          const ownLanue = document.querySelectorAll('.langue-item')
-          ownLanue.forEach((item)=> item.style.display = 'none')
-          langue.style.display = 'block'
-          
-        })
-        clearInterval(interval)
+      if (currentLang) {
+        currentLang = currentLang;
+        currentLang.addEventListener("change", () => {
+          let currentl = currentLang.value;
+          const langue = document.querySelector(`.${currentl}`);
+          const ownLang = document.querySelectorAll(".langue-item");
+          ownLang.forEach((item) => (item.style.display = "none"));
+          langue.style.display = "block";
+        });
+        clearInterval(interval);
       } else {
-        console.log('chua load xong')
+        console.log("chua load xong");
       }
     }, 500);
+  }
 
+  function getReloadLang() {
+    let currentLanguage = getCookie("googtrans");
+    const langue = document.querySelector(`.${currentLanguage}`);
+    const ownLang = document.querySelectorAll(".langue-item");
+    ownLang.forEach((item) => (item.style.display = "none"));
+
+    langue.style.display = "block";
+  }
+
+  function getCookie(cname) {
+    let name = cname + "=/vi/";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(";");
+    for (let i = 0; i < ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) == " ") {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
   }
 
   start();
